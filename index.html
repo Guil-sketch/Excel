@@ -9,12 +9,10 @@
 </head>
 <body>
 
-  <!-- Cabeçalho (sem nome à esquerda) -->
+  <!-- Cabeçalho com menu suspenso -->
   <header>
     <nav>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <div></div><div></div><div></div>
-      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
       <ul id="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#sobre">Sobre</a></li>
@@ -28,7 +26,9 @@
   <section id="home" class="bloco home">
     <h2>Aprenda <span>Excel</span> sem dificuldade</h2>
     <p>Domine o Excel e simplifique seu dia a dia!</p>
-    <a href="#curso" class="btn">Quero aprender</a>
+    <div class="cta">
+      <a href="#curso" class="btn">Quero aprender</a>
+    </div>
   </section>
 
   <!-- Bloco Sobre -->
@@ -90,6 +90,7 @@
     <p>&copy; 2025 Guilherme Pereira - Global Consult</p>
   </footer>
 
+  <!-- Script do menu -->
   <script>
     function toggleMenu() {
       document.getElementById("menu").classList.toggle("active");
