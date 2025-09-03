@@ -63,23 +63,27 @@ nav ul li a:hover {
   padding: 100px 20px;
 }
 
-.hero h2 {
-  font-size: 48px;
-  margin-bottom: 10px;
+/* Home layout */
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-.hero h2 span {
-  color: #ffeb3b;
+.home-text {
+  flex: 1;
 }
 
-.hero p {
-  font-size: 20px;
+.logo-card img {
+  max-width: 180px;
+  height: auto;
+  display: block;
 }
 
 /* Botão abaixo do texto */
 .cta {
   margin-top: 20px;
-  text-align: center;
 }
 
 .btn {
@@ -182,6 +186,15 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo-card {
+    margin-top: 20px;
+  }
+
   .hero h2 {
     font-size: 32px;
   }
