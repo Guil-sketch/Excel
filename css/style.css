@@ -92,8 +92,6 @@ nav ul li a:hover {
 }
 
 .btn {
-  background: #ffeb3b;
-  color: #333;
   padding: 15px 25px;
   text-decoration: none;
   border-radius: 8px;
@@ -103,7 +101,6 @@ nav ul li a:hover {
 }
 
 .btn:hover {
-  background: #fdd835;
   transform: translateY(-3px);
 }
 
@@ -158,41 +155,23 @@ nav ul li a:hover {
   font-size: 18px;
 }
 
-/* Excel */
+/* Excel (verde) */
 #curso-excel .modulo {
-  border-left: 6px solid #ffeb3b;
+  border-left: 6px solid #21a366;
+  background: rgba(33, 163, 102, 0.15);
 }
+#curso-excel .modulo h3 { color: #8BE0B5; }
+.btn-excel { background:#21a366; color:#fff; }
+.btn-excel:hover { background:#1b8a59; }
 
-#curso-excel .modulo h3 {
-  color: #ffeb3b;
-}
-
-#curso-excel .btn {
-  background: #ffeb3b;
-  color: #333;
-}
-
-#curso-excel .btn:hover {
-  background: #fdd835;
-}
-
-/* Power BI */
+/* Power BI (amarelo) */
 #curso-powerbi .modulo {
-  border-left: 6px solid #9c27b0;
+  border-left: 6px solid #F2C811;
+  background: rgba(242, 200, 17, 0.15);
 }
-
-#curso-powerbi .modulo h3 {
-  color: #ba68c8;
-}
-
-#curso-powerbi .btn {
-  background: #9c27b0;
-  color: #fff;
-}
-
-#curso-powerbi .btn:hover {
-  background: #7b1fa2;
-}
+#curso-powerbi .modulo h3 { color: #F7E27A; }
+.btn-powerbi { background:#F2C811; color:#1b1f23; }
+.btn-powerbi:hover { background:#d9b30f; color:#111; }
 
 /* Formulário */
 form {
