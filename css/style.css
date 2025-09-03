@@ -56,6 +56,7 @@ nav ul li a:hover {
   transition: 0.3s;
 }
 
+/* Hero */
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -72,7 +73,13 @@ nav ul li a:hover {
 
 .hero p {
   font-size: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+
+/* Corrige o botão sobreposto */
+.hero .btn {
+  display: inline-block;
+  margin-top: 20px; /* empurra para baixo */
 }
 
 .btn {
@@ -89,23 +96,27 @@ nav ul li a:hover {
   background: #fdd835;
 }
 
+/* Blocos como cards */
 .bloco {
-  padding: 80px 20px;
+  background: rgba(255,255,255,0.1); /* fundo claro translúcido */
+  border-radius: 12px;
+  padding: 60px 20px;
   max-width: 1000px;
-  margin: auto;
-  border-radius: 10px;
-  margin-bottom: 40px;
+  margin: 40px auto; /* espaço entre seções */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
 .bloco h2 {
   margin-bottom: 20px;
   font-size: 28px;
+  color: #fff;
 }
 
-.home {
-  text-align: center;
+.bloco p {
+  color: #fff;
 }
 
+/* Grid dos módulos */
 .modulos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -118,18 +129,22 @@ nav ul li a:hover {
   padding: 20px;
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .modulo h3 {
   margin-bottom: 10px;
   font-size: 20px;
+  color: #fff;
 }
 
 .modulo p {
   margin-bottom: 15px;
   font-size: 16px;
+  color: #ddd;
 }
 
+/* Formulário */
 form {
   background: rgba(0,0,0,0.2);
   padding: 20px;
@@ -161,6 +176,7 @@ form button:hover {
   background: #fdd835;
 }
 
+/* Rodapé */
 footer {
   text-align: center;
   padding: 20px;
@@ -168,6 +184,7 @@ footer {
   margin-top: 40px;
 }
 
+/* Responsividade */
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -196,3 +213,4 @@ footer {
     font-size: 18px;
   }
 }
+
