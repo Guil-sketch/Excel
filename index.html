@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Excel - Guilherme Pereira</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Guilherme Pereira</h1>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+      </div>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#curso">Curso</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <h2>Aprenda <span>Excel</span> sem dificuldade</h2>
+    <p>Domine o Excel e simplifique seu dia a dia!</p>
+    <a href="#curso" class="btn">Quero aprender</a>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre mim</h2>
+    <p>Sou Guilherme Pereira, especialista em Excel e apaixonado por transformar
+    planilhas em soluções práticas.</p>
+  </section>
+
+  <section id="curso">
+    <h2>O Curso</h2>
+    <p>Neste curso você vai aprender desde o básico até recursos avançados do Excel:
+    fórmulas, gráficos, dashboards e muito mais!</p>
+    <p><strong>Data de início:</strong> 15/09/2025</p>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Preencha o formulário abaixo ou fale comigo direto no WhatsApp!</p>
+
+    <form action="https://formsubmit.co/guilsilva7@outlook.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+      <input type="hidden" name="_subject" value="Nova mensagem do site!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p style="text-align:center; margin-top:20px;">
+      <a href="https://wa.me/5561982190082" target="_blank" class="btn">Falar no WhatsApp</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guilherme Pereira - Global Consult</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
