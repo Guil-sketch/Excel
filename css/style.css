@@ -227,12 +227,18 @@ footer {
   margin-top: 40px;
 }
 
+/* Banner */
+.banner img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
 /* Responsividade */
 @media (max-width: 768px) {
-  .home-content {
-    flex-direction: column;
-    text-align: center;
-  }
+  ...
+}
 
   .logo-card {
     margin-top: 20px;
