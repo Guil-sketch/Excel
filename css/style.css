@@ -107,9 +107,9 @@ nav ul li a:hover {
   transform: translateY(-3px);
 }
 
-/* Blocos transparentes */
+/* Blocos */
 .bloco {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.08);
   border-radius: 12px;
   padding: 60px 20px;
   max-width: 1000px;
@@ -122,6 +122,14 @@ nav ul li a:hover {
   color: #fff;
 }
 
+/* Banner */
+.banner img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
 /* Grid dos módulos */
 .modulos {
   display: grid;
@@ -130,7 +138,7 @@ nav ul li a:hover {
   margin-top: 20px;
 }
 
-/* Cartões dos módulos - estilo base */
+/* Cartões dos módulos */
 .modulo {
   background: rgba(255, 255, 255, 0.1);
   padding: 25px;
@@ -227,18 +235,12 @@ footer {
   margin-top: 40px;
 }
 
-/* Banner */
-.banner img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
 /* Responsividade */
 @media (max-width: 768px) {
-  ...
-}
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
 
   .logo-card {
     margin-top: 20px;
