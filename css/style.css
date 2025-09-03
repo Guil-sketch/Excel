@@ -13,13 +13,9 @@ body {
 
 header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end; /* só o menu, sem nome à esquerda */
   align-items: center;
   padding: 20px 30px;
-}
-
-header h1 {
-  font-size: 22px;
 }
 
 nav ul {
@@ -76,7 +72,7 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-/* Corrige o botão sobreposto */
+/* Botão abaixo do texto */
 .hero .btn {
   display: inline-block;
   margin-top: 20px;
@@ -96,9 +92,9 @@ nav ul li a:hover {
   background: #fdd835;
 }
 
-/* Blocos como cards */
+/* Blocos transparentes */
 .bloco {
-  background: rgba(255,255,255,0.85); /* fundo branco translúcido */
+  background: rgba(255,255,255,0.1); /* transparente */
   border-radius: 12px;
   padding: 60px 20px;
   max-width: 1000px;
@@ -106,15 +102,9 @@ nav ul li a:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-/* Textos dentro dos blocos em cinza escuro */
-.bloco h2 {
-  margin-bottom: 20px;
-  font-size: 28px;
-  color: #333;
-}
-
+.bloco h2, 
 .bloco p {
-  color: #444;
+  color: #fff; /* textos brancos */
 }
 
 /* Grid dos módulos */
@@ -126,7 +116,7 @@ nav ul li a:hover {
 }
 
 .modulo {
-  background: rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.3);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -136,18 +126,18 @@ nav ul li a:hover {
 .modulo h3 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #222;
+  color: #fff;
 }
 
 .modulo p {
   margin-bottom: 15px;
   font-size: 16px;
-  color: #555;
+  color: #ddd;
 }
 
 /* Formulário */
 form {
-  background: rgba(255,255,255,0.9);
+  background: rgba(0,0,0,0.3);
   padding: 20px;
   border-radius: 10px;
 }
@@ -183,7 +173,6 @@ footer {
   padding: 20px;
   background: rgba(0,0,0,0.2);
   margin-top: 40px;
-  color: #fff;
 }
 
 /* Responsividade */
