@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curso de Excel - Guilherme Pereira</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+<body>
+
+  <header>
+    <h1>Guilherme Pereira</h1>
+    <nav>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div></div><div></div><div></div>
+      </div>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#curso">Curso</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="bloco home">
+    <h2>Aprenda <span>Excel</span> sem dificuldade</h2>
+    <p>Domine o Excel e simplifique seu dia a dia!</p>
+    <a href="#curso" class="btn">Quero aprender</a>
+  </section>
+
+  <section id="sobre" class="bloco sobre">
+    <h2>Sobre mim</h2>
+    <p>Sou Guilherme Pereira, especialista em Excel e apaixonado por transformar
+    planilhas em soluções práticas. Já ajudei diversos profissionais a dominarem
+    o Excel de forma simples e eficiente.</p>
+  </section>
+
+  <section id="curso" class="bloco curso">
+    <h2>O Curso</h2>
+    <p>Confira os módulos disponíveis para download:</p>
+
+    <div class="modulos">
+      <div class="modulo">
+        <h3>Módulo 1 – Fundamentos do Excel</h3>
+        <p>Aprenda a interface, atalhos e primeiros passos.</p>
+        <a href="arquivos/modulo1.pdf" class="btn" download>Baixar Arquivo</a>
+      </div>
+
+      <div class="modulo">
+        <h3>Módulo 2 – Fórmulas e Funções</h3>
+        <p>Trabalhe com SOMA, MÉDIA, SE e outras funções essenciais.</p>
+        <a href="arquivos/modulo2.xlsx" class="btn" download>Baixar Arquivo</a>
+      </div>
+
+      <div class="modulo">
+        <h3>Módulo 3 – Gráficos</h3>
+        <p>Crie gráficos profissionais para seus relatórios.</p>
+        <a href="arquivos/modulo3.pdf" class="btn" download>Baixar Arquivo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="bloco contato">
+    <h2>Contato</h2>
+    <p>Preencha o formulário abaixo ou fale comigo direto no WhatsApp!</p>
+
+    <form action="https://formsubmit.co/guilsilva7@outlook.com" method="POST">
+      <input type="text" name="name" placeholder="Seu nome" required>
+      <input type="email" name="email" placeholder="Seu e-mail" required>
+      <textarea name="message" rows="5" placeholder="Sua mensagem" required></textarea>
+      <input type="hidden" name="_subject" value="Nova mensagem do site!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <button type="submit">Enviar</button>
+    </form>
+
+    <p style="text-align:center; margin-top:20px;">
+      <a href="https://wa.me/5561982190082" target="_blank" class="btn">Falar no WhatsApp</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Guilherme Pereira - Global Consult</p>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("menu").classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
