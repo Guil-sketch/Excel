@@ -190,7 +190,7 @@ form input, form textarea {
 }
 
 form button {
-  background: #ffeb3b;
+  background: #F2C811;
   border: none;
   padding: 15px;
   width: 100%;
@@ -202,8 +202,26 @@ form button {
 }
 
 form button:hover {
-  background: #fdd835;
+  background: #d9b30f;
   transform: translateY(-2px);
+}
+
+/* Botão WhatsApp */
+#contato .btn {
+  background: #F2C811;
+  color: #1b1f23;
+  padding: 15px 25px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#contato .btn:hover {
+  background: #d9b30f;
+  color: #111;
+  transform: translateY(-3px);
 }
 
 /* Rodapé */
