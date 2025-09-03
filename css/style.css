@@ -79,7 +79,7 @@ nav ul li a:hover {
 /* Corrige o botão sobreposto */
 .hero .btn {
   display: inline-block;
-  margin-top: 20px; /* empurra para baixo */
+  margin-top: 20px;
 }
 
 .btn {
@@ -98,22 +98,23 @@ nav ul li a:hover {
 
 /* Blocos como cards */
 .bloco {
-  background: rgba(255,255,255,0.1); /* fundo claro translúcido */
+  background: rgba(255,255,255,0.85); /* fundo branco translúcido */
   border-radius: 12px;
   padding: 60px 20px;
   max-width: 1000px;
-  margin: 40px auto; /* espaço entre seções */
+  margin: 40px auto;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Textos dentro dos blocos em cinza escuro */
 .bloco h2 {
   margin-bottom: 20px;
   font-size: 28px;
-  color: #fff;
+  color: #333;
 }
 
 .bloco p {
-  color: #fff;
+  color: #444;
 }
 
 /* Grid dos módulos */
@@ -125,7 +126,7 @@ nav ul li a:hover {
 }
 
 .modulo {
-  background: rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.9);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
@@ -135,18 +136,18 @@ nav ul li a:hover {
 .modulo h3 {
   margin-bottom: 10px;
   font-size: 20px;
-  color: #fff;
+  color: #222;
 }
 
 .modulo p {
   margin-bottom: 15px;
   font-size: 16px;
-  color: #ddd;
+  color: #555;
 }
 
 /* Formulário */
 form {
-  background: rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.9);
   padding: 20px;
   border-radius: 10px;
 }
@@ -182,6 +183,7 @@ footer {
   padding: 20px;
   background: rgba(0,0,0,0.2);
   margin-top: 40px;
+  color: #fff;
 }
 
 /* Responsividade */
@@ -213,4 +215,3 @@ footer {
     font-size: 18px;
   }
 }
-
